@@ -1,0 +1,12 @@
+
+
+
+
+
+
+table, tr, th, td, caption{
+    border: 1px solid #3c0202f0;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse ;
+    padding: 0.5rem;
+}

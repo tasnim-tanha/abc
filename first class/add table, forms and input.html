@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="author" content="Dave Gray">
+        <meta name="description" content="this page contains all the things i am learning how to create as i learn HTML">
+<title>My frist web page</title>
+<link rel="icon" href="index.html" type="image/x-icon">
+<link rel="stylesheet" href="main.css"
+type="text/css">
+
+   </head>
+
+    <body>
+      <header>
+    <h1> My goals for the year</h1> 
+<nav >
+ <ul>
+      <li>
+        <a href="#html">learning HTML</a>
+      </li>
+      <li>
+        <a href="#vacation">planning a vacation</a>
+      </li>
+      <li>
+        <a href="#contact">contact me</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<hr>
+<main>
+    <article id="html">
+    <h2>im ready to learn HTML</h2>
+      <p>this is my frst web page</p>
+      <section>
+      <h3>HTML5</h3>
+      <img src="img/resized-image-Promo.jpeg" alt="HTML5 HTML5_Logo_512" title="I am learning HTML5" width="200" height="200">
+      
+      <figure>
+        <figcaption>An example of HTML5 code</figcaption>
+        <p>
+            <code>&lt;h1&gt;Hellow world!&lt;/h1&gt; </code>
+        </p>
+      </figure>
+        </section>
+    <section>
+      <h3>my daily schedule</h3>
+      <p>let me tell you how :</p>
+     <ol>
+     <li>i learn more about web dev. </li>
+     <li> i drink tea. </li>
+     <li> i learn from <abbr 
+        title="Mozilla Developer Network">
+       <a href="https://developer.mozilla.org/">MDN</a>
+      </abbr> </li>
+
+    </ol>
+    <aside>
+      <details>
+        <summary>
+          guess the <mark> of hours i code per day</mark>
+        </summary>
+        <p>
+          i start at 8 pm and i write code for 3 hours every morning
+        </p>
+
+      </details>
+    </aside>
+    <br>
+    <table>
+        <caption>My daily schedule</caption>
+        <thead>
+        <tr>
+            <th>&nbsp;</th>
+            <th scope="col">time</th>
+            <th scope="col">activity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th  scope="row">morning</th>
+            <td>
+              <time datetime="08:00">8am</time>-<time datetime="11:00">11 am</time>
+         </td>
+         <td>write code</td>
+        </tr>
+        <tr>
+            <th scope="row">break</th>
+            <td>
+              <time datetime="11:00">11am</time>-<time datetime="12:00">12am</time>
+         </td>
+         <td>eat lunch</td>
+        </tr>
+        <tr>
+         <th scope="row">afternoon</th>
+        
+            <td>
+              <time datetime="12:00">12am</time>-<time datetime="17:00">5am</time>
+         </td>
+         <td>study for other courses</td>
+        </tr>
+        <tr>
+            <th scope="row">evening</th>
+            <td rowspan="2"> all other times</td>
+            <td>free time</td>
+        </tr>
+        <tr>
+            <th scope="row">night</th>
+            <td>sleep</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+
+            <td colspan="3">and thats what i do every day , 5 days a week</td>
+        </tr>
+    </tfoot>
+    </table>
+  </section>
+    </article>
+
+    <hr>
+
+    <br><br><br><br><br>
+
+<article id="vacation">
+      <h2>im also planning <em>a vacation </em> </h2>
+      <p>i've been working hard </p>
+<section>
+      <h3>places i would like to visit</h3>
+      <ul>
+    <li>
+        <p>i really love to visit toronto</p>
+        <figure>
+        <img src="img/toronto.jpeg" alt="toronto" title="i want to visit toronto" width="200" height="200" loading="lazy">
+        <figcaption>
+            toronto view 
+        </figcaption>
+        </figure>
+      <p>USA</p>
+      <p>maldives</p></li>
+      <li>
+        <p>i have heard good things about going here:</p>
+      <address>
+        washington,USA
+        <figure>
+            <img src="img/washington.jpeg" alt="washington" title="its a great view of washington" width="200" height="200" loading="lazy">
+            <figcaption>
+                washington
+            </figcaption>
+          </figure>
+
+
+        toronto,canada
+      </address>
+      
+    </li>
+      </ul>
+    </section>
+    <hr>
+   
+        <section>
+  
+      <h3>Places i want to avoid:</h3>
+      <dl>
+        <dt>north pool</dt>
+            <dd>i hear this <strong>cold</strong>!</dd>
+            <dt>south pole</dt>
+            <dd>this is also cold</dd>
+            <dt>Mountain tops</dt>
+            <dd>these are also cold</dd>
+        
+      </dl>
+    </section>
+    </article>
+
+    <hr>
+
+    <article id="contact">
+<h2>contact me</h2>
+<p>i would really like to hear from you!</p>
+
+   <form action="http://httpbin.org/get" method="get">
+    <fieldset>
+                   <legend>PERSONAL INFO</legend>
+    <p>
+    <label for="firstName">first name:</label>
+    <input type="text" name="firstName" id="firstName" placeholder="jane" autocomplete="on" required 
+    autofocus>
+    </p>
+    <p>
+    <label for="lastName">last name:</label>
+    <input type="text" name="lastName" id="lastName" placeholder="doe" autocomplete="on" required >
+  </p> 
+    <p>
+    <label for="password">password:</label>
+    <input type="text" name="password" id="password" placeholder="enter passwoed" autocomplete="on" required >
+  </p>
+    <p>
+    <label for="Phone">Phone:</label>
+    <input type="tel" name="Phone" id="Phone" placeholder="***********" 
+    pattern="[0-9]{3}[0-9]{3}[0-9]{5}" autocomplete="on" required >
+  </p>
+    <p>
+    <label for="decade">favorite decade :</label>
+    <input type="number" name="decade" id="decade" 
+    min="1950" max="2020" step="10" value="1980">
+  </p>
+  <p>
+    <label for="coffee">favorite coffee:</label>
+    <select name="coffee" id="coffee" multiple size="5">
+      <optgroup label="Coffees">
+      <option value="regular coffee">regular coffee</option>
+      <option value="iced coffee">iced coffee</option>
+    </optgroup>
+    <optgroup label="Expresso drinks">
+      <option value="latte" selected>latte</option>
+      <option value="cappucino">cappucino</option>
+      <option value="amiricano">amiricano</option>
+      <option value="other">other</option>
+    </optgroup>
+    </select>
+  </p>
+    
+  
+   </fieldset>
+   <br>
+   <fieldset>
+      <legend>what is your favorite food</legend>
+      <p>
+        <input type="radio" name="food" id="tacos" value="tacos">
+        <label for="tacos">Tacos</label>
+      </p>
+      <p>
+        <input type="radio" name="food" id="burger" value="burger">
+        <label for="burger">Burger</label>
+      </p>
+      <p>
+        <input type="radio" name="food" id="sandwich" value="sandwich">
+        <label for="sandwich">Sandwich</label>
+      </p>
+      <p>
+        <input type="radio" name="food" id="pizza" value="pizza">
+        <label for="pizza">pizza</label>
+      </p>
+      <p>
+        <input type="radio" name="food" id="fuchka" value="fuchka">
+        <label for="fuchka">fuchka</label>
+      </p>
+      <p>
+        <input type="radio" name="food" id="others" value="others">
+        <label for="others">others</label>
+      </p>
+   </fieldset>
+   <br>
+      <fieldset>
+        <legend>do you have pets?</legend>
+      <p>
+        <input type="checkbox" name="pets" id="cat" value="cat">
+        <label for="cat">cat</label>
+      </p>
+      <p>
+        <input type="checkbox" name="pets" id="dog" value="dog">
+        <label for="dog">dog</label>
+      </p>
+      <p>
+        <input type="checkbox" name="pets" id="fish" value="fish">
+        <label for="fish">fish</label>
+      </p>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>send me a note</legend>
+      <label for="message">your message:</label>
+      <br>
+      <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+    </fieldset>
+    <br>
+    <button type="submit">submit</button>
+    <button type="submit" formaction="http://httpbin.org/post" formmethod="post">post</button>
+    <button type="reset">Reset</button>
+   </form>
+    </article>
+    </main>
+      <hr>
+      <footer>
+        <p>
+     &it; &it; &it; &copy; <a href="about.html">tasnim tanha</a> &it; &it; &it;</p>
+        <p>
+         <a href="#">Back to top</a>
+        </p>
+      </footer>
+    </body>
+
+</html>
